@@ -59,7 +59,7 @@ const login = async (req, res) => {
 
 export const isLoggedIn = (req, res, next) => {
     if (!req.user) {
-        return res.redirect("/login?erors=Please log in first");
+        return res.redirect("/login?errors=Please log in first");
     }
     next();
 }
